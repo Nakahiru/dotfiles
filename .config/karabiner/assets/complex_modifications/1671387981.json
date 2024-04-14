@@ -1,0 +1,1 @@
+{"title":"Left control on long press, on short press map it to escape","rules":[{"description":"Left control on long press, on short press map it to escape","manipulators":[{"type":"basic","from":{"key_code":"left_control","modifiers":{"optional":["any"]}},"to":[{"key_code":"left_control"}],"to_if_alone":[{"repeat":false,"key_code":"escape","lazy":false,"halt":false}]}]}]}

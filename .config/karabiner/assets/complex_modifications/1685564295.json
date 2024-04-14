@@ -1,0 +1,1 @@
+{"title":"Test","rules":[{"description":"Test","manipulators":[{"type":"basic","from":{"key_code":"f5"},"to":[{"key_code":"fn"},{"repeat":false,"key_code":"up_arrow"}]}]}]}
