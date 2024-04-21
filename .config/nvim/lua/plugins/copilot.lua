@@ -3,10 +3,10 @@ return {
     "zbirenbaum/copilot.lua",
     opts = {
       panel = {
-        enabled = true,
+        enabled = false,
       },
       suggestion = {
-        enabled = true,
+        enabled = false,
         auto_trigger = true,
         debounce = 75,
         keymap = {

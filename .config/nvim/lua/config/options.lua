@@ -4,4 +4,8 @@
 
 local opt = vim.opt
 
+-- enable spell checking
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
+
 opt.conceallevel = 0

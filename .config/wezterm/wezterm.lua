@@ -8,8 +8,8 @@ config.hide_tab_bar_if_only_one_tab = true
 config.enable_scroll_bar = false
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
-config.color_scheme = "Catppuccin Mocha" -- or Macchiato, Frappe, Latte
--- config.color_scheme = "Catppuccin Latte"
+-- config.color_scheme = "Catppuccin Mocha" -- or Macchiato, Frappe, Latte
+config.color_scheme = "rose-pine-moon" -- or rose-pine-moon, rose-pine, rose-pine-dawn
 
 -- config.use_resize_increments = true
 config.window_padding = {
