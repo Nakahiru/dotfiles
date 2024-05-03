@@ -15,4 +15,12 @@ return {
       }
     end,
   },
+
+  -- disable animation on current indent level
+  {
+    "echasnovski/mini.indentscope",
+    opts = {
+      draw = { animation = require("mini.indentscope").gen_animation.none() },
+    },
+  },
 }

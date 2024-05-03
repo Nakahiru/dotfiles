@@ -31,8 +31,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>cu", vim.cmd.UndotreeToggle)
-
 -- map jj shortcut key as escape key in insert mode
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("i", "kj", "<esc>")
@@ -44,4 +42,4 @@ vim.keymap.set("n", "dw", 'vb"_d')
 -- vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
 
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
