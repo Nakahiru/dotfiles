@@ -39,49 +39,49 @@ return {
         },
         volar = {},
         tsserver = {
-          settings = {
-            typescript = {
-              inlayHints = {
-                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayVariableTypeHints = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
-              },
-            },
-            javascript = {
-              inlayHints = {
-                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayVariableTypeHints = true,
-
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
-              },
-            },
-            preferences = {
-              hostInfo = "neovim",
-              includeCompletionsForModuleExports = true,
-              includeCompletionsForImportStatements = true,
-              importModuleSpecifierPreference = "relative",
-              importModuleSpecifier = "relative",
-            },
-          },
-          init_options = {
-            -- preferences = {
-            --   hostInfo = "neovim",
-            --   includeCompletionsForModuleExports = true,
-            --   includeCompletionsForImportStatements = true,
-            --   importModuleSpecifierPreference = "relative",
-            --   importModuleSpecifier = "relative",
-            -- },
-          },
+          -- settings = {
+          --   typescript = {
+          --     inlayHints = {
+          --       includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
+          --       includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+          --       includeInlayVariableTypeHints = true,
+          --       includeInlayFunctionParameterTypeHints = true,
+          --       includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+          --       includeInlayPropertyDeclarationTypeHints = true,
+          --       includeInlayFunctionLikeReturnTypeHints = true,
+          --       includeInlayEnumMemberValueHints = true,
+          --     },
+          --   },
+          --   javascript = {
+          --     inlayHints = {
+          --       includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
+          --       includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+          --       includeInlayVariableTypeHints = true,
+          --
+          --       includeInlayFunctionParameterTypeHints = true,
+          --       includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+          --       includeInlayPropertyDeclarationTypeHints = true,
+          --       includeInlayFunctionLikeReturnTypeHints = true,
+          --       includeInlayEnumMemberValueHints = true,
+          --     },
+          --   },
+          --   preferences = {
+          --     hostInfo = "neovim",
+          --     includeCompletionsForModuleExports = true,
+          --     includeCompletionsForImportStatements = true,
+          --     importModuleSpecifierPreference = "relative",
+          --     importModuleSpecifier = "relative",
+          --   },
+          -- },
+          -- init_options = {
+          --   -- preferences = {
+          --   --   hostInfo = "neovim",
+          --   --   includeCompletionsForModuleExports = true,
+          --   --   includeCompletionsForImportStatements = true,
+          --   --   importModuleSpecifierPreference = "relative",
+          --   --   importModuleSpecifier = "relative",
+          --   -- },
+          -- },
         },
       },
     },
