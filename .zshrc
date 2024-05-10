@@ -116,10 +116,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias ll="exa -l -g --icons"
+alias ll="eza -l -g --icons"
 alias la="ll -a"
-alias ls="exa"
-alias lsa="exa"
+alias ls="eza"
+alias lsa="eza"
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"

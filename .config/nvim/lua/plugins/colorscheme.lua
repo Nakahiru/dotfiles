@@ -1,30 +1,17 @@
 return {
-  -- add rose-pine
-  { "rose-pine/neovim", name = "rose-pine" },
-
-  -- Configure LazyVim to load rose-pine
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "rose-pine-moon", -- can be rose-pine-dawn | rose-pine-moon | rose-pine-moon
-    },
-  },
-
-  -- {
-  --   "catppuccin/nvim",
-  -- },
-  --
   -- {
   --   "LazyVim/LazyVim",
   --   opts = {
-  --     colorscheme = "catppuccin-frappe",
   --     -- colorscheme = "catppuccin-latte",
+  --     -- colorscheme = "catppuccin-frappe",
+  --     -- colorscheme = "catppuccin-macchiato",
+  --     colorscheme = "catppuccin-mocha",
   --   },
   -- },
 
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = true,
-  --   opts = { style = "moon" },
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = { style = "moon" },
+  },
 }

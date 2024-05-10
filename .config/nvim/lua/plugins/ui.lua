@@ -12,8 +12,17 @@ return {
       opts.presets = {
         bottom_search = true, -- use a classic bottom cmdline for search
         lsp_doc_border = true, -- add a border to hover docs and signature help
+        command_palette = true, -- position the cmdline and popupmenu together
       }
     end,
+  },
+  {
+    "folke/noice.nvim",
+    opts = {
+      cmdline = {
+        view = "cmdline",
+      },
+    },
   },
 
   -- disable animation on current indent level
