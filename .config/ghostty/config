@@ -1,0 +1,70 @@
+font-family = Monolisa Nerd Font Mono
+font-size = 17
+copy-on-select = clipboard
+
+font-thicken = false
+
+# Valid values are:
+# 
+#   * `block`
+#   * `bar`
+#   * `underline`
+# 
+cursor-style = block
+
+# native | transparent | tabs
+macos-titlebar-style = tabs
+macos-window-shadow = true
+
+background-opacity = 0.96
+background-blur-radius = 20
+
+# The theme to use for the windows. Valid values:
+#
+#   * `auto` - Determine the theme based on the configured terminal
+#      background color.
+#   * `system` - Use the system theme.
+#   * `light` - Use the light theme regardless of system theme.
+#   * `dark` - Use the dark theme regardless of system theme.
+#
+# On macOS, if `macos-titlebar-style` is "tabs", the window theme will be
+# automatically set based on the luminosity of the terminal background color.
+# This only applies to terminal windows. This setting will still apply to
+# non-terminal windows within Ghostty.
+#
+# This is currently only supported on macOS and Linux.
+window-theme = auto
+
+# Shell integration features to enable if shell integration itself is enabled.
+# The format of this is a list of features to enable separated by commas. If
+# you prefix a feature with `no-` then it is disabled. If you omit a feature,
+# its default value is used, so you must explicitly disable features you don't
+# want. You can also use `true` or `false` to turn all features on or off.
+# 
+# Available features:
+# 
+#   * `cursor` - Set the cursor to a blinking bar at the prompt.
+# 
+#   * `sudo` - Set sudo wrapper to preserve terminfo.
+# 
+#   * `title` - Set the window title via shell integration.
+# 
+# Example: `cursor`, `no-cursor`, `sudo`, `no-sudo`, `title`, `no-title`
+shell-integration-features = no-cursor,no-sudo,title
+
+window-save-state = always
+
+# theme = tokyonight
+# theme = tokyonight-storm
+# theme = tokyonight-day
+
+# theme = rose-pine-dawn
+
+# theme = catppuccin-latte
+theme = catppuccin-mocha
+# theme = catppuccin-macchiato
+
+keybind = super+right=goto_split:right
+keybind = super+left=goto_split:left
+keybind = super+up=goto_split:top
+keybind = super+down=goto_split:bottom

@@ -19,34 +19,27 @@ return {
     dependencies = {
       "hrsh7th/cmp-emoji",
       "onsails/lspkind-nvim",
+      "windwp/nvim-autopairs",
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
-      -- local lspkind = require("lspkind")
-      -- local function border(hl_name)
-      --   return {
-      --     { "╭", hl_name },
-      --     { "─", hl_name },
-      --     { "╮", hl_name },
-      --     { "│", hl_name },
-      --     { "╯", hl_name },
-      --     { "─", hl_name },
-      --     { "╰", hl_name },
-      --     { "│", hl_name },
-      --   }
-      -- end
+      local lspkind = require("lspkind")
 
       opts.formatting = {
-        fields = { "kind", "abbr", "menu" },
-        format = function(entry, vim_item)
-          local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
-          local strings = vim.split(kind.kind, "%s", { trimempty = true })
-          kind.kind = " " .. (strings[1] or "") .. " "
-          kind.menu = "    (" .. (strings[2] or "") .. ")"
+        fields = { "abbr", "kind", "menu" },
 
-          return kind
-        end,
+        format = lspkind.cmp_format({
+          mode = "symbol_text", -- show only symbol annotations
+          preset = "codicons",
+          maxwidth = 50,
+          ellipsis_char = "...",
+          show_labelDetails = true,
+
+          before = function(entry, vim_item)
+            return vim_item
+          end,
+        }),
       }
 
       opts.experimental = {
@@ -59,14 +52,16 @@ return {
 
       opts.window = {
         completion = {
-          side_padding = 0,
-          -- winhighlight = "Normal:CmpPmenu,CursorLine:CmpSel,Search:None",
-          -- winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+          side_padding = 1,
+          winblend = 2, -- transparency
+          -- col_offset = -3, -- move window to left or right
+          winhighlight = "Normal:CmpPmenu,Search:None,FloatBorder:Normal",
           scrollbar = true,
+          border = "rounded", -- single|rounded|none
         },
         documentation = {
-          -- border = border("CmpDocBorder"),
-          winhighlight = "Normal:CmpDoc",
+          border = "rounded",
+          winhighlight = "Normal:CmpPmenu,FloatBorder:Normal",
         },
       }
 

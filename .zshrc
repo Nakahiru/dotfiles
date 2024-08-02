@@ -152,3 +152,5 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/julien/Library/Application Support/Herd/
 
 # Herd injected PHP binary.
 export PATH="/Users/julien/Library/Application Support/Herd/bin/":$PATH
+
+[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"

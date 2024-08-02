@@ -5,7 +5,12 @@
 local opt = vim.opt
 
 -- enable spell checking
-vim.opt.spelllang = "en_us"
-vim.opt.spell = true
-
+opt.spelllang = "en_us"
+opt.spell = true
+opt.incsearch = true
+opt.completeopt = { "menu", "menuone", "noselect" }
+opt.wrap = true
+opt.pumblend = 0 -- transparency cmp
 opt.conceallevel = 0
+
+vim.g.lazyvim_prettier_needs_config = true

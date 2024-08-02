@@ -3,7 +3,7 @@ return {
     "mbbill/undotree",
     keys = {
       {
-        "<leader>cu",
+        "<leader>U",
         vim.cmd.UndotreeToggle,
         desc = "Toggle undotree",
       },

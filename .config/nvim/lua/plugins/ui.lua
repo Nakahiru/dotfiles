@@ -9,6 +9,14 @@ return {
         },
         opts = { skip = true },
       })
+      -- Filter all errors in vuejs regarding inlay hints
+      -- those errors are not impacting the experience
+      -- table.insert(opts.routes, {
+      --   filter = {
+      --     find = "Error in decoration provider vim_lsp_inlayhint.win",
+      --   },
+      --   opts = { skip = true },
+      -- })
       opts.presets = {
         bottom_search = true, -- use a classic bottom cmdline for search
         lsp_doc_border = true, -- add a border to hover docs and signature help
@@ -22,14 +30,6 @@ return {
       cmdline = {
         view = "cmdline",
       },
-    },
-  },
-
-  -- disable animation on current indent level
-  {
-    "echasnovski/mini.indentscope",
-    opts = {
-      draw = { animation = require("mini.indentscope").gen_animation.none() },
     },
   },
 }
