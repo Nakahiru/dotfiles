@@ -6,7 +6,7 @@ return {
       coloumns = { "icon" },
       keymaps = {
         -- ["q"] = "actions.close", <- disable this one because cannot use macro otherwise
-        -- ["<esc>"] = "actions.close", <- disable this because when pressing esc for exit visual mode
+        ["-"] = "actions.close", -- <- disable this because when pressing esc for exit visual mode
         -- it will also quit oil window
       },
       view_options = {

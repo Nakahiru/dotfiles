@@ -2,10 +2,32 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin-latte",
-      colorscheme = "catppuccin-mocha",
+      -- colorscheme = "catppuccin-latte", -- light
+      -- colorscheme = "catppuccin-mocha", -- dark
+      colorscheme = "tokyonight",
       -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "catppuccin-macchiato",
+    },
+  },
+
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+
+  {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    opts = {
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
+            },
+          },
+        },
+      },
     },
   },
 
@@ -15,7 +37,7 @@ return {
     -- opts = { style = "moon" },
     -- opts = { style = "day" },
     opts = {
-      style = "night",
+      style = "night", -- day | moon | night
       -- transparent = true,
       -- styles = {
       --   sidebars = "transparent",

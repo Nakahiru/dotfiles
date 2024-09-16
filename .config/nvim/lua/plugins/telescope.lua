@@ -46,10 +46,15 @@ return {
         LazyVim.pick("grep_string", { hidden = true, only_sort_text = true, word_match = "-w" }),
         desc = "Word (Root Dir)",
       },
+      -- {
+      --   "<leader><leader>",
+      --   LazyVim.pick("find_files", { hidden = true }),
+      --   desc = "Find files",
+      -- },
       {
         "<leader><leader>",
-        LazyVim.pick("find_files", { hidden = true }),
-        desc = "Find files",
+        LazyVim.pick("git_files"),
+        desc = "Git files",
       },
       { "<leader>/", LazyVim.pick("live_grep", {}), desc = "Grep (Root Dir)" },
     },

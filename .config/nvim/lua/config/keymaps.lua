@@ -33,7 +33,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- vim.keymap.set("i", "kj", "<esc>")
 
 -- delete a word backwards
-vim.keymap.set("n", "dw", 'vb"_d')
+-- vim.keymap.set("n", "dw", 'vb"_d')
 
 -- select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")

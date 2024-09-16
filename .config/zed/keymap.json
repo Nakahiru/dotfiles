@@ -10,6 +10,7 @@
       "space b d": "pane::CloseActiveItem",
       "space b o": "pane::CloseInactiveItems",
       "space e": "workspace::ToggleLeftDock",
+      "ctrl-/": "terminal_panel::ToggleFocus",
       "ctrl-d": [
         "workspace::SendKeystrokes",
         "ctrl-shift-d z z"
@@ -34,6 +35,11 @@
   {
     "context": "ProjectPanel && not_editing || (Terminal)",
     "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "ctrl-/": "terminal_panel::ToggleFocus",
+      "escape": "project_panel::ToggleFocus",
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle",
       "space ,": "tab_switcher::Toggle",
@@ -62,7 +68,14 @@
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle",
       "space ,": "tab_switcher::Toggle",
-      "space /": "pane::DeploySearch"
+      "space /": "pane::DeploySearch",
+      "ctrl-/": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-/": "terminal_panel::ToggleFocus"
     }
   },
   {
