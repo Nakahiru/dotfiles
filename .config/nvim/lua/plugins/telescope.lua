@@ -2,7 +2,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {
-      "nvim-telescope/telescope-file-browser.nvim",
+      -- "nvim-telescope/telescope-file-browser.nvim",
       "nvim-lua/plenary.nvim",
     },
     -- config = function(_, opts)
@@ -46,32 +46,32 @@ return {
         LazyVim.pick("grep_string", { hidden = true, only_sort_text = true, word_match = "-w" }),
         desc = "Word (Root Dir)",
       },
-      -- {
-      --   "<leader><leader>",
-      --   LazyVim.pick("find_files", { hidden = true }),
-      --   desc = "Find files",
-      -- },
       {
         "<leader><leader>",
-        LazyVim.pick("git_files"),
-        desc = "Git files",
+        LazyVim.pick("find_files", { hidden = true }),
+        desc = "Find files",
       },
+      -- {
+      --   "<leader><leader>",
+      --   LazyVim.pick("git_files"),
+      --   desc = "Git files",
+      -- },
       { "<leader>/", LazyVim.pick("live_grep", {}), desc = "Grep (Root Dir)" },
     },
     opts = function(_, opts)
       opts.defaults = {
         layout_strategy = "vertical",
-        layout_config = { prompt_position = "top" },
-        sorting_strategy = "ascending",
+        layout_config = { prompt_position = "bottom" },
+        sorting_strategy = "descending",
         -- winblend = 0,
       }
 
       opts.extensions = {
-        file_browser = {
-          hijack_netrw = true,
-          grouped = true,
-          select_buffer = true,
-        },
+        -- file_browser = {
+        --   hijack_netrw = true,
+        --   grouped = true,
+        --   select_buffer = true,
+        -- },
       }
 
       opts.pickers = {

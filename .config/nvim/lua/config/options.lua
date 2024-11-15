@@ -5,8 +5,8 @@
 local opt = vim.opt
 
 -- enable spell checking
-opt.spelllang = "en_us"
-opt.spell = true
+-- opt.spelllang = "en_us"
+-- opt.spell = true
 opt.incsearch = true
 opt.completeopt = { "menu", "menuone", "noselect" }
 opt.wrap = true

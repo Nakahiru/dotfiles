@@ -11,9 +11,13 @@ font-thicken = false
 #   * `underline`
 # 
 cursor-style = block
+cursor-style-blink = true
+
+# default shell to use
+command = /opt/homebrew/bin/fish
 
 # native | transparent | tabs
-macos-titlebar-style = tabs
+macos-titlebar-style = native
 macos-window-shadow = true
 
 # background-opacity = 0.96
@@ -68,13 +72,15 @@ window-save-state = always
 # which split is focused. To disable this feature, set this value to 1.
 unfocused-split-opacity = 0.9
 
-theme = tokyonight
+# theme = tokyonight
 # theme = tokyonight-storm
 # theme = tokyonight-day
 
 # theme = rose-pine
 
-# theme = catppuccin-latte
+# theme = GruvboxDark
+
+theme = catppuccin-latte
 # theme = catppuccin-mocha
 # theme = catppuccin-macchiato
 
@@ -84,25 +90,27 @@ keybind = super+up=goto_split:top
 keybind = super+down=goto_split:bottom
 
 # tmux like keybind with leader key
-keybind = ctrl+a>n=new_window
+#keybind = ctrl+a>n=new_window
+#
+#keybind = ctrl+a>n=next_tab
+#keybind = ctrl+a>p=previous_tab
+#keybind = ctrl+a>t=new_tab
+#keybind = ctrl+a>physical:one=goto_tab:1
+#keybind = ctrl+a>physical:two=goto_tab:2
+#keybind = ctrl+a>physical:three=goto_tab:3
+#keybind = ctrl+a>physical:four=goto_tab:4
+#keybind = ctrl+a>physical:five=goto_tab:5
+#keybind = ctrl+a>physical:six=goto_tab:6
+#keybind = ctrl+a>physical:seven=goto_tab:9
+#keybind = ctrl+a>physical:eight=goto_tab:8
+#keybind = ctrl+a>physical:nine=goto_tab:10
+#
+#keybind = ctrl+a>v=new_split:right
+#keybind = ctrl+a>s=new_split:down
+#
+#keybind = ctrl+a>l=goto_split:right
+#keybind = ctrl+a>h=goto_split:left
+#keybind = ctrl+a>k=goto_split:top
+#keybind = ctrl+a>j=goto_split:bottom
 
-keybind = ctrl+a>n=next_tab
-keybind = ctrl+a>p=previous_tab
-keybind = ctrl+a>t=new_tab
-keybind = ctrl+a>physical:one=goto_tab:1
-keybind = ctrl+a>physical:two=goto_tab:2
-keybind = ctrl+a>physical:three=goto_tab:3
-keybind = ctrl+a>physical:four=goto_tab:4
-keybind = ctrl+a>physical:five=goto_tab:5
-keybind = ctrl+a>physical:six=goto_tab:6
-keybind = ctrl+a>physical:seven=goto_tab:9
-keybind = ctrl+a>physical:eight=goto_tab:8
-keybind = ctrl+a>physical:nine=goto_tab:10
-
-keybind = ctrl+a>v=new_split:right
-keybind = ctrl+a>s=new_split:down
-
-keybind = ctrl+a>l=goto_split:right
-keybind = ctrl+a>h=goto_split:left
-keybind = ctrl+a>k=goto_split:top
-keybind = ctrl+a>j=goto_split:bottom
+keybind = global:cmd+'=toggle_quick_terminal

@@ -121,9 +121,9 @@ return {
               environment = {
                 includePaths = { "/Users/julien/Documents/prestashop/dev/PrestaShop" },
               },
-              initializationOptions = {
-                licenceKey = "INTELEPHENSE_LICENCE_KEY",
-              },
+              -- initializationOptions = {
+              --   licenceKey = "INTELEPHENSE_LICENCE_KEY",
+              -- },
             },
           },
         },

@@ -51,18 +51,18 @@ return {
       }
 
       opts.window = {
-        completion = {
-          side_padding = 1,
-          winblend = 2, -- transparency
-          -- col_offset = -3, -- move window to left or right
-          winhighlight = "Normal:CmpPmenu,Search:None,FloatBorder:Normal",
-          scrollbar = true,
-          border = "rounded", -- single|rounded|none
-        },
-        documentation = {
-          border = "rounded",
-          winhighlight = "Normal:CmpPmenu,FloatBorder:Normal",
-        },
+        -- completion = {
+        --   side_padding = 1,
+        --   winblend = 2, -- transparency
+        --   -- col_offset = -3, -- move window to left or right
+        --   winhighlight = "Normal:CmpPmenu,Search:None,FloatBorder:Normal",
+        --   scrollbar = true,
+        --   border = "rounded", -- single|rounded|none
+        -- },
+        -- documentation = {
+        --   border = "rounded",
+        --   winhighlight = "Normal:CmpPmenu,FloatBorder:Normal",
+        -- },
       }
 
       opts.mapping = {

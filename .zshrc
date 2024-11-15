@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export TMUX_CONFIG="$HOME/.config/tmux/tmux.conf"
 
 # fnm: https://github.com/Schniz/fnm#shell-setup
 eval "$(fnm env --use-on-cd)"
@@ -120,6 +121,8 @@ alias ll="eza -l -g --icons"
 alias la="ll -a"
 alias ls="eza"
 alias lsa="eza"
+
+alias cat="bat"
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"

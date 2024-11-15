@@ -2,9 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin-latte", -- light
+      colorscheme = "catppuccin-latte", -- light
       -- colorscheme = "catppuccin-mocha", -- dark
-      colorscheme = "tokyonight",
+      -- colorscheme = "rose-pine",
+      -- colorscheme = "tokyonight",
       -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "catppuccin-macchiato",
     },
@@ -37,7 +38,7 @@ return {
     -- opts = { style = "moon" },
     -- opts = { style = "day" },
     opts = {
-      style = "night", -- day | moon | night
+      style = "day", -- day | moon | night
       -- transparent = true,
       -- styles = {
       --   sidebars = "transparent",

@@ -38,7 +38,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
 
-vim.keymap.set("n", "<space>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+-- vim.keymap.set("n", "<space>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+
 -- vim.keymap.set("n", "<space>e", function()
 --   require("telescope").extensions.file_browser.file_browser()
 -- end)
