@@ -215,19 +215,6 @@
                         }
                     ],
                     "treat_as_built_in_keyboard": true
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 24850,
-                        "vendor_id": 6645
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "escape" },
-                            "to": [{ "key_code": "grave_accent_and_tilde" }]
-                        }
-                    ]
                 }
             ],
             "name": "nakahiru",
