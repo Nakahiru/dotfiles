@@ -9,7 +9,7 @@
       "space /": "pane::DeploySearch",
       "space b d": "pane::CloseActiveItem",
       "space b o": "pane::CloseInactiveItems",
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::Open",
       "ctrl-/": "terminal_panel::ToggleFocus",
       "ctrl-d": [
         "workspace::SendKeystrokes",
@@ -40,7 +40,7 @@
       "r": "project_panel::Rename",
       "ctrl-/": "terminal_panel::ToggleFocus",
       "escape": "project_panel::ToggleFocus",
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::Open",
       "space space": "file_finder::Toggle",
       "space ,": "tab_switcher::Toggle",
       "space /": "pane::DeploySearch",
@@ -65,7 +65,7 @@
   {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::Open",
       "space space": "file_finder::Toggle",
       "space ,": "tab_switcher::Toggle",
       "space /": "pane::DeploySearch",

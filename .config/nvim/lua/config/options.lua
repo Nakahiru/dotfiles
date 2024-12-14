@@ -13,4 +13,6 @@ opt.wrap = true
 opt.pumblend = 0 -- transparency cmp
 opt.conceallevel = 0
 
+opt.smartindent = false
+
 vim.g.lazyvim_prettier_needs_config = true

@@ -1,5 +1,5 @@
 font-family = Monolisa Nerd Font Mono
-font-size = 17
+font-size = 20
 copy-on-select = clipboard
 
 font-thicken = false
@@ -17,7 +17,7 @@ cursor-style-blink = true
 command = /opt/homebrew/bin/fish
 
 # native | transparent | tabs
-macos-titlebar-style = native
+macos-titlebar-style = tabs
 macos-window-shadow = true
 
 # background-opacity = 0.96
@@ -63,7 +63,7 @@ window-theme = auto
 #   * `title` - Set the window title via shell integration.
 # 
 # Example: `cursor`, `no-cursor`, `sudo`, `no-sudo`, `title`, `no-title`
-shell-integration-features = no-cursor,no-sudo,title
+shell-integration-features = cursor,sudo,title
 
 window-save-state = always
 
@@ -74,43 +74,52 @@ unfocused-split-opacity = 0.9
 
 # theme = tokyonight
 # theme = tokyonight-storm
-# theme = tokyonight-day
+theme = tokyonight-day
 
 # theme = rose-pine
 
 # theme = GruvboxDark
 
-theme = catppuccin-latte
+# theme = catppuccin-latte
 # theme = catppuccin-mocha
 # theme = catppuccin-macchiato
 
-keybind = super+right=goto_split:right
-keybind = super+left=goto_split:left
-keybind = super+up=goto_split:top
-keybind = super+down=goto_split:bottom
+keybind = super+left=resize_split:left,10
+keybind = super+right=resize_split:right,10
+keybind = super+down=resize_split:down,10
+keybind = super+up=resize_split:up,10
 
 # tmux like keybind with leader key
-#keybind = ctrl+a>n=new_window
-#
-#keybind = ctrl+a>n=next_tab
-#keybind = ctrl+a>p=previous_tab
-#keybind = ctrl+a>t=new_tab
-#keybind = ctrl+a>physical:one=goto_tab:1
-#keybind = ctrl+a>physical:two=goto_tab:2
-#keybind = ctrl+a>physical:three=goto_tab:3
-#keybind = ctrl+a>physical:four=goto_tab:4
-#keybind = ctrl+a>physical:five=goto_tab:5
-#keybind = ctrl+a>physical:six=goto_tab:6
-#keybind = ctrl+a>physical:seven=goto_tab:9
-#keybind = ctrl+a>physical:eight=goto_tab:8
-#keybind = ctrl+a>physical:nine=goto_tab:10
-#
-#keybind = ctrl+a>v=new_split:right
-#keybind = ctrl+a>s=new_split:down
-#
-#keybind = ctrl+a>l=goto_split:right
-#keybind = ctrl+a>h=goto_split:left
-#keybind = ctrl+a>k=goto_split:top
-#keybind = ctrl+a>j=goto_split:bottom
+keybind = ctrl+a>c=new_tab
+keybind = ctrl+a>x=close_window
+
+keybind = ctrl+a>n=next_tab
+keybind = ctrl+a>p=previous_tab
+keybind = ctrl+a>ctrl+n=next_tab
+keybind = ctrl+a>ctrl+p=previous_tab
+
+keybind = ctrl+a>physical:one=goto_tab:1
+keybind = ctrl+a>physical:two=goto_tab:2
+keybind = ctrl+a>physical:three=goto_tab:3
+keybind = ctrl+a>physical:four=goto_tab:4
+keybind = ctrl+a>physical:five=goto_tab:5
+keybind = ctrl+a>physical:six=goto_tab:6
+keybind = ctrl+a>physical:seven=goto_tab:9
+keybind = ctrl+a>physical:eight=goto_tab:8
+keybind = ctrl+a>physical:nine=goto_tab:10
+
+keybind = ctrl+a>v=new_split:right
+keybind = ctrl+a>s=new_split:down
+keybind = ctrl+a>ctrl+v=new_split:right
+keybind = ctrl+a>ctrl+s=new_split:down
+
+keybind = ctrl+a>ctrl+l=goto_split:right
+keybind = ctrl+a>ctrl+h=goto_split:left
+keybind = ctrl+a>ctrl+k=goto_split:top
+keybind = ctrl+a>ctrl+j=goto_split:bottom
+keybind = ctrl+a>l=goto_split:right
+keybind = ctrl+a>h=goto_split:left
+keybind = ctrl+a>k=goto_split:top
+keybind = ctrl+a>j=goto_split:bottom
 
 keybind = global:cmd+'=toggle_quick_terminal

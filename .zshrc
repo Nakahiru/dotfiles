@@ -138,11 +138,6 @@ autoload -U compinit && compinit
 # bun completions
 [ -s "/Users/julien/.bun/_bun" ] && source "/Users/julien/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-
 # Herd injected NVM configuration
 export NVM_DIR="/Users/julien/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -157,3 +152,7 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/julien/Library/Application Support/Herd/
 export PATH="/Users/julien/Library/Application Support/Herd/bin/":$PATH
 
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

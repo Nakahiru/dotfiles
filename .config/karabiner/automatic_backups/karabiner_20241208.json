@@ -24,7 +24,6 @@
                     },
                     {
                         "description": "Left ctrl + hjkl to arrow keys Vim",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

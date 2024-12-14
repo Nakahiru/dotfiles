@@ -9,6 +9,12 @@ return {
         },
         opts = { skip = true },
       })
+      table.insert(opts.routes, {
+        filter = {
+          find = "Ignoring completion, line number is not the current line.",
+        },
+        opts = { skip = true },
+      })
       -- Filter all errors in vuejs regarding inlay hints
       -- those errors are not impacting the experience
       -- table.insert(opts.routes, {
