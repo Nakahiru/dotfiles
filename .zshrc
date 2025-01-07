@@ -156,3 +156,11 @@ export PATH="/Users/julien/Library/Application Support/Herd/bin/":$PATH
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/julien/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP 7.4 configuration.
+export HERD_PHP_74_INI_SCAN_DIR="/Users/julien/Library/Application Support/Herd/config/php/74/"
