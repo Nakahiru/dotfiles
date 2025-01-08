@@ -5,4 +5,5 @@ return {
   { "akinsho/bufferline.nvim", enabled = false },
   { "yetone/avante.nvim", enabled = false },
   { "ThePrimeagen/harpoon", enabled = false },
+  { "nvim-telescope/telescope.nvim", enabled = false },
 }
