@@ -39,7 +39,7 @@ return {
     -- opts = { style = "day" },
     opts = {
       style = "night", -- day | moon | night
-      transparent = true,
+      -- transparent = true,
       -- styles = {
       --   sidebars = "transparent",
       --   floats = "transparent",

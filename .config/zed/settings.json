@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "features": {
-    "inline_completion_provider": "none"
+    "inline_completion_provider": "zed"
   },
   "show_copilot_suggestions": true,
   "base_keymap": "VSCode",
@@ -22,7 +22,7 @@
     "dock": "right"
   },
   "soft_wrap": "editor_width",
-  "theme": "One Dark",
+  "theme": "Rosé Pine",
   "buffer_font_family": "Monolisa",
   "buffer_font_size": 18,
   "ui_font_size": 18,

@@ -76,6 +76,20 @@ return {
         enabled = false,
       },
     },
+    picker = {
+      sources = {
+        files = {
+          layout = {
+            preview = false,
+          },
+        },
+        buffers = {
+          layout = {
+            preview = false,
+          },
+        },
+      },
+    },
     statuscolumn = {},
     scroll = {
       enabled = false,
