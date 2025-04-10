@@ -28,6 +28,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set("n", "<leader><Tab>n", ":tabnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><Tab>p", ":tabprevious<CR>", { noremap = true, silent = true })
+
 -- map jj shortcut key as escape key in insert mode
 -- vim.keymap.set("i", "jk", "<esc>")
 -- vim.keymap.set("i", "kj", "<esc>")
