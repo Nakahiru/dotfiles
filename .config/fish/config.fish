@@ -38,7 +38,5 @@ fish_add_path ~/.cargo/bin
 zoxide init fish | source
 starship init fish | source
 fzf --fish | source
-
-# bun
-set -gx BUN_INSTALL "$HOME/.bun"
-set -gx PATH "$BUN_INSTALL/bin" $PATH
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
