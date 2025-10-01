@@ -19,16 +19,16 @@
         "workspace::SendKeystrokes",
         "ctrl-shift-u z z"
       ],
-      "n": [
-        "vim::MoveToNextMatch",
-        "editor::ScrollCursorCenter"
-      ],
-      "shift-n": [
-        "vim::MoveToPrevMatch",
-        "editor::ScrollCursorCenter"
-      ],
+      // "n": [
+      //   "vim::MoveToNextMatch",
+      //   "editor::ScrollCursorCenter"
+      // ],
+      // "shift-n": [
+      //   "vim::MoveToPrevMatch",
+      //   "editor::ScrollCursorCenter"
+      // ],
       "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       // put key-bindings here if you want them to work in normal & visual mode
     }
   },
@@ -44,22 +44,10 @@
       "space space": "file_finder::Toggle",
       "space ,": "tab_switcher::Toggle",
       "space /": "pane::DeploySearch",
-      "ctrl-w h": [
-        "workspace::ActivatePaneInDirection",
-        "Left"
-      ],
-      "ctrl-w l": [
-        "workspace::ActivatePaneInDirection",
-        "Right"
-      ],
-      "ctrl-w k": [
-        "workspace::ActivatePaneInDirection",
-        "Up"
-      ],
-      "ctrl-w j": [
-        "workspace::ActivatePaneInDirection",
-        "Down"
-      ],
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown",
     }
   },
   {

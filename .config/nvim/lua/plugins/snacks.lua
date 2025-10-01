@@ -71,6 +71,7 @@ return {
     },
     bigfile = {},
     lazygit = {},
+    image = {},
     indent = {
       animate = {
         enabled = false,

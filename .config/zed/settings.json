@@ -7,10 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "theme": "One Dark",
+  "icon_theme": "Catppuccin Macchiato",
   "features": {
-    "inline_completion_provider": "zed"
+    "edit_prediction_provider": "zed"
   },
-  "show_copilot_suggestions": true,
   "base_keymap": "VSCode",
   "telemetry": {
     "metrics": false
@@ -19,12 +20,11 @@
     // Default width of the project panel.
     "default_width": 240,
     // Where to dock project panel. Can be 'left' or 'right'.
-    "dock": "right"
+    "dock": "left"
   },
   "soft_wrap": "editor_width",
-  "theme": "Rosé Pine",
-  "buffer_font_family": "Monolisa",
-  "buffer_font_size": 18,
+  "buffer_font_family": "MonoLisa",
+  "buffer_font_size": 20,
   "ui_font_size": 18,
   "vim_mode": true,
   "vim": {
@@ -37,38 +37,36 @@
     "show_type_hints": true,
     "show_parameter_hints": true,
     // Corresponds to null/None LSP hint type value.
-    "show_other_hints": true
+    "show_other_hints": false
   },
   "prettier": {
     // "trailingComma": "es5",
-    "tabWidth": 2
+    // "tabWidth": 2
     // "semi": false,
     // "singleQuote": true
   },
   "relative_line_numbers": true,
+  "use_system_window_tabs": false,
   "terminal": {
-    "shell": {
-      "program": "/bin/zsh"
-    },
+    // "shell": {
+    //   "program": "/bin/zsh"
+    // },
     "font_family": "Monolisa Nerd Font Mono",
     "blinking": "on"
   },
-  "default_dock_anchor": "bottom",
   "tabs": {
     "git_status": true,
-    "close_position": "left",
     "file_icons": true
   },
   "tab_bar": {
     "show": true
   },
-  "assistant": {
+  "agent": {
     // Whether to show the assistant panel button in the status bar.
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "lmstudio",
+      "model": "qwen/qwen3-coder-30b"
     },
-    "version": "2",
     "button": true
   },
   "languages": {

@@ -238,24 +238,6 @@
                         "vendor_id": 13364
                     },
                     "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "is_game_pad": true,
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 3680,
-                        "vendor_id": 13364
-                    },
-                    "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "vendor_id": 2007
-                    },
-                    "ignore": false
                 }
             ],
             "name": "nakahiru",
